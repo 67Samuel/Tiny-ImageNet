@@ -4,7 +4,10 @@ unzip tiny-imagenet-200.zip
 rm tiny-imagenet-200.zip
 
 # Setup virtual env
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
+#virtualenv venv
+#source venv/bin/activate
+#pip install -r requirements.txt
+pipenv shell
+source pipenv/bin/activate
+pipenv install -r requirements.txt
+pipenv lock
